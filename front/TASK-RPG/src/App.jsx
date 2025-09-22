@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <div className='fake-popup'>
-
+        <div className='fake-popup2'>
+            
+        </div>
       </div>
     </>
   )

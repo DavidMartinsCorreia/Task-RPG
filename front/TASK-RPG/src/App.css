@@ -14,7 +14,7 @@ body {
 .fake-popup {
   width: 90%;
   height: 90%;
-  background: rgba(15, 25, 35, 0.9);
+background: rgba(15, 25, 35, 0.5); 
   border: 2px solid #0088cc;
   border-radius: 8px;
   position: absolute;
@@ -24,7 +24,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3),
     inset 0 0 20px rgba(0, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  opacity: 0;
   overflow: hidden;
 
   /* A ANIMAÇÃO LINHAS PAR */
@@ -146,7 +145,7 @@ body {
         #0088cc 100%
       )
       bottom left/100% 2px no-repeat,
-      
+
     /* 4 pontos de luz nos cantos internos */
       radial-gradient(circle at 10px 10px, #0088cc 2px, transparent 3px),
     radial-gradient(
@@ -180,5 +179,84 @@ body {
   100% {
     opacity: 1;
     filter: brightness(1) drop-shadow(0 0 15px #0088cc);
+  }
+}
+
+.fake-popup2 {
+  width: 80%;
+  height: 80%;
+  background: rgba(15, 25, 35, 0.9);
+  border: 2px solid #66ccff;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  overflow: hidden;
+  
+  /* ANIMAÇÃO HORIZONTAL */
+  animation: popupRevealX 1s ease-out 2s forwards;
+}
+
+/* ANIMAÇÃO HORIZONTAL - Cortina da esquerda para direita */
+@keyframes popupRevealX {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(0);  /* Mudança aqui: scaleX */
+    transform-origin: center;
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(0.05);  /* Linha vertical fina */
+  }
+  70% {
+    transform: translate(-50%, -50%) scaleX(0.9);  /* Quase largura total */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(1);  /* Largura completa */
+  }
+}
+
+.fake-popup2::before {
+  content: "";
+  position: absolute;
+
+  /* LINHA CENTRAL VERTICAL (em vez de horizontal) */
+  top: 0;
+  left: 50%;
+  width: 3px;  /* Agora é vertical */
+  height: 0;   /* Começa sem altura */
+  background: linear-gradient(
+    180deg,  /* Direção vertical */
+    transparent,
+    #0088cc,
+    #ffffff,
+    #0088cc,
+    transparent
+  );
+  transform: translateX(-50%);
+  animation: centralLineX 1.3s ease-out forwards;
+  z-index: 10;
+}
+
+@keyframes centralLineX {
+  0% {
+    height: 0;  /* Sem altura */
+    opacity: 0;
+  }
+  20% {
+    height: 100%;  /* Altura total */
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
