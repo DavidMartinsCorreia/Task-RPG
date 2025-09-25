@@ -1,0 +1,51 @@
+.life-container {
+  border: 2px solid white;
+  padding: 0.9rem 0;
+  width: 70%;
+  justify-self: center;
+}
+
+.life {
+  display: flex;
+  align-items: center;
+  color: white;
+  /*brilho no texto*/
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.2);
+
+  gap: 16px;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.heart-hp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.hp-bar {
+  flex: 1;
+  max-width: 300px;
+}
+
+.bar-background {
+  background: transparent;
+  height: 0.2rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0.2rem;
+}
+
+.bar-fill {
+  background: white;
+  height: 100%;
+  border-radius: 4px;
+}
+.heart {
+  height: 1.5rem; /* Tamanho mais proporcional */
+  width: 1.5rem;
+  color: white;
+}
