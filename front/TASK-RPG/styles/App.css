@@ -14,7 +14,7 @@ body {
 .fake-popup {
   width: 90%;
   height: 90%;
-background: rgba(15, 25, 35, 0.5); 
+  background: rgba(15, 25, 35, 0.5); 
   border: 2px solid #0088cc;
   border-radius: 8px;
   position: absolute;
@@ -259,4 +259,19 @@ background: rgba(15, 25, 35, 0.5);
   100% {
     opacity: 0;
   }
+}
+
+.top-nav{
+  margin:5vw;
+}
+
+
+.M-tasks{
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 40px;
+  background-color: transparent;
+  border-color: #0088cc;
 }
