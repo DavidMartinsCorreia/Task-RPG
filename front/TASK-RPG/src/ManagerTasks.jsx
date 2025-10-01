@@ -1,5 +1,5 @@
 import React from 'react'
-
+import GrTasks from '../components/pages/grTasks';
 function ManagerTasks() {
     return (
         <div style={{ padding: '20px' }}>
@@ -8,6 +8,7 @@ function ManagerTasks() {
                     <button onClick={() => window.location.href = '/'}>
                         Voltar para início
                     </button>
+                    <GrTasks/>
                 </div>
             </div>
         </div>
