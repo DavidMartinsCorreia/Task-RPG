@@ -46,35 +46,38 @@ const GrTasks = () => {
     }
   };
 
-  if (loading) return <div>A carregar...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <div className='test'>A carregar...</div>;
+  if (error) return <div className='test'>{error}</div>;
 
   return (
     <div className='test'>
-      <h2>Minhas Tasks</h2>
+      <h2 className='Titulo-MT'>Minhas Tasks</h2>
       
       {tasks.length === 0 ? (
         <p>Não há tasks</p>
       ) : (
-        <ul>
+        <div className="scroll-box">
+        <ul className='lista'>
           {tasks.map(task => (
-            <li key={task.id}>
+           <div className='Show-Task'>
+            <h4 key={task.id}>
               <h1>{task.title}</h1>
               <h3>{task.category}</h3>
-              
-              
-              <button onClick={() => handleStatusChange(task.id, 'COMPLETED')}>
+                         
+            <div className='Button-CE'>
+              <button className='Button-C' onClick={() => handleStatusChange(task.id, 'COMPLETED')}>
                 Completar
               </button>
-              <button onClick={() => handleDelete(task.id)}>
+              <button className='Button-E' onClick={() => handleDelete(task.id)}>
                 Eliminar
               </button>
+            </div>
+            </h4>
 
-
-
-            </li>
+            </div>
           ))}
         </ul>
+        </div>
       )}
 
       

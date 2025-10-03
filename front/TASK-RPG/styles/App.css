@@ -14,7 +14,7 @@ body {
 .fake-popup {
   width: 90%;
   height: 90%;
-  background: rgba(15, 25, 35, 0.5); 
+  background: rgba(15, 25, 35, 0.5);
   border: 2px solid #0088cc;
   border-radius: 8px;
   position: absolute;
@@ -98,8 +98,7 @@ body {
   right: -2px;
   bottom: -2px;
   background: 
-    /* Linha superior com quebras nos cantos */ 
-    linear-gradient(
+    /* Linha superior com quebras nos cantos */ linear-gradient(
         90deg,
         #0088cc 0%,
         #0088cc 20px,
@@ -109,7 +108,6 @@ body {
         #0088cc 100%
       )
       top left/100% 2px no-repeat,
-
     /* Linha vertical esquerda com quebras */
       linear-gradient(
         180deg,
@@ -121,7 +119,6 @@ body {
         #0088cc 100%
       )
       top left/2px 100% no-repeat,
-
     /* Linha vertical direita com quebras */
       linear-gradient(
         180deg,
@@ -133,7 +130,6 @@ body {
         #0088cc 100%
       )
       top right/2px 100% no-repeat,
-
     /* Linha inferior com quebras nos cantos */
       linear-gradient(
         90deg,
@@ -145,7 +141,6 @@ body {
         #0088cc 100%
       )
       bottom left/100% 2px no-repeat,
-
     /* 4 pontos de luz nos cantos internos */
       radial-gradient(circle at 10px 10px, #0088cc 2px, transparent 3px),
     radial-gradient(
@@ -197,7 +192,7 @@ body {
   backdrop-filter: blur(10px);
   opacity: 0;
   overflow: hidden;
-  
+
   /* ANIMAÇÃO HORIZONTAL */
   animation: popupRevealX 1s ease-out 2s forwards;
 }
@@ -206,19 +201,19 @@ body {
 @keyframes popupRevealX {
   0% {
     opacity: 0;
-    transform: translate(-50%, -50%) scaleX(0);  /* Mudança aqui: scaleX */
+    transform: translate(-50%, -50%) scaleX(0); /* Mudança aqui: scaleX */
     transform-origin: center;
   }
   30% {
     opacity: 1;
-    transform: translate(-50%, -50%) scaleX(0.05);  /* Linha vertical fina */
+    transform: translate(-50%, -50%) scaleX(0.05); /* Linha vertical fina */
   }
   70% {
-    transform: translate(-50%, -50%) scaleX(0.9);  /* Quase largura total */
+    transform: translate(-50%, -50%) scaleX(0.9); /* Quase largura total */
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%) scaleX(1);  /* Largura completa */
+    transform: translate(-50%, -50%) scaleX(1); /* Largura completa */
   }
 }
 
@@ -229,11 +224,11 @@ body {
   /* LINHA CENTRAL VERTICAL (em vez de horizontal) */
   top: 0;
   left: 50%;
-  width: 3px;  /* Agora é vertical */
-  height: 0;   /* Começa sem altura */
+  width: 3px; /* Agora é vertical */
+  height: 0; /* Começa sem altura */
   background: linear-gradient(
-    180deg,  /* Direção vertical */
-    transparent,
+    180deg,
+    /* Direção vertical */ transparent,
     #0088cc,
     #ffffff,
     #0088cc,
@@ -246,11 +241,11 @@ body {
 
 @keyframes centralLineX {
   0% {
-    height: 0;  /* Sem altura */
+    height: 0; /* Sem altura */
     opacity: 0;
   }
   20% {
-    height: 100%;  /* Altura total */
+    height: 100%; /* Altura total */
     opacity: 1;
   }
   40% {
@@ -261,17 +256,12 @@ body {
   }
 }
 
-.top-nav{
-  margin:5vw;
-}
-
-
-.M-tasks{
+.M-tasks {
   color: white;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
     0 0 30px rgba(0, 255, 255, 0.2);
-  color: #ffffff;
   border-radius: 40px;
   background-color: transparent;
   border-color: #0088cc;
+  margin: 5vw;
 }

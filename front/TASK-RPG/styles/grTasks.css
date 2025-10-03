@@ -1,3 +1,59 @@
-.test{
-    color: white;
+.test {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.2);
+  font-size: smaller;
+}
+
+.Titulo-MT {
+  text-align: center;
+  width: 100%;
+  font-size: 3vh;
+}
+
+.lista {
+  margin: 0%;
+  padding: 0%;
+}
+
+.scroll-box {
+  margin: 3vw;
+  height: 50vh;
+  width: 80%;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: -start;
+}
+
+.Show-Task {
+  margin: 5rem 0;
+  overflow: auto;
+  padding: 50px;
+  box-shadow: 0px 7px 46px 0px rgb(0, 0, 0, 0.3);
+  background-color: #1c2e4a;
+  border-radius: 8px;
+  background-image: linear-gradient(147deg, #2e3a59 0%, #1a3b46 74%);
+}
+
+.Button-CE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Button-C,
+.Button-E {
+  flex: 0 0 auto;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(0, 255, 255, 0.2);
+  border-radius: 40px;
+  background-color: transparent;
+  border-color: #0088cc;
+
+  margin-top: 2rem;
 }

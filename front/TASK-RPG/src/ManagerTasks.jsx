@@ -1,14 +1,21 @@
 import React from 'react'
 import GrTasks from '../components/pages/grTasks';
+import "../styles/ManagerTasks.css"
 function ManagerTasks() {
     return (
         <div style={{ padding: '20px' }}>
+
             <div className='fake-popup'>
-                <div className='fake-popup2'>
-                    <button onClick={() => window.location.href = '/'}>
-                        Voltar para início
+                <div className='nave-bar'>
+                    <button className='back' onClick={() => window.location.href = '/'}>
+                        menu pricipal
                     </button>
-                    <GrTasks/>
+                    
+
+                </div>
+
+                <div className='fake-popup2'>
+                    <GrTasks />
                 </div>
             </div>
         </div>
