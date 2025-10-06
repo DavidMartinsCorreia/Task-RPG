@@ -60,7 +60,7 @@ const GrTasks = () => {
         <ul className='lista'>
           {tasks.map(task => (
            <div className='Show-Task'>
-            <h4 key={task.id}>
+           
               <h1>{task.title}</h1>
               <h3>{task.category}</h3>
                          
@@ -72,8 +72,7 @@ const GrTasks = () => {
                 Eliminar
               </button>
             </div>
-            </h4>
-
+         
             </div>
           ))}
         </ul>

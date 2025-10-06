@@ -33,6 +33,8 @@ public class TaskDTO {
         this.datacr = datacr;
         this.status = status;
     }
+    public TaskDTO() {}
+
 
     public TaskDTO(String titulo, String descricao, TaskPriority prioridade, TaskStatus status, LocalDateTime datacr, LocalDateTime dataup, String categoria) {
         this.titulo = titulo;
@@ -70,4 +72,39 @@ public class TaskDTO {
         return categoria;
     }
 
+    public LocalDateTime getDatacr() {
+        return datacr;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setStatus(TaskStatus status) {
+        this.status = status;
+    }
+
+    public void setPrioridade(TaskPriority prioridade) {
+        this.prioridade = prioridade;
+    }
+
+    public void setDatacr(LocalDateTime datacr) {
+        this.datacr = datacr;
+    }
+
+    public void setDataup(LocalDateTime dataup) {
+        this.dataup = dataup;
+    }
+
+    public void setDatalim(LocalDateTime datalim) {
+        this.datalim = datalim;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 }

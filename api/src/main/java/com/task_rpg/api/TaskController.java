@@ -40,8 +40,11 @@ public class TaskController {
             Task createdTask = taskService.createTask(taskDTO);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdTask);
         } catch (Exception e) {
-            return ResponseEntity.badRequest().build();
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(null); 
         }
+
     }
 
     @PutMapping("/{id}")

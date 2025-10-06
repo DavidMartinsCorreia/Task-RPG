@@ -27,7 +27,12 @@
   display: flex;
   flex-direction: column;
   align-items: -start;
+  scrollbar-width: thin;
+  scrollbar-color: #005f8f #1a3b46;
+  
 }
+
+
 
 .Show-Task {
   margin: 5rem 0;
@@ -43,6 +48,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 3vh;
 }
 
 .Button-C,
@@ -54,6 +60,6 @@
   border-radius: 40px;
   background-color: transparent;
   border-color: #0088cc;
-
   margin-top: 2rem;
+  padding: 1vh;
 }

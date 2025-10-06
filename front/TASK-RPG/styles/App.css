@@ -17,7 +17,7 @@ body {
   background: rgba(15, 25, 35, 0.5);
   border: 2px solid #0088cc;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -183,7 +183,7 @@ body {
   background: rgba(15, 25, 35, 0.9);
   border: 2px solid #66ccff;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

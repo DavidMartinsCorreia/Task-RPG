@@ -1,9 +1,9 @@
-.back {
+.back, .create-task {
   color: white;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.4),
     0 0 30px rgba(0, 255, 255, 0.2);
   border-radius: 40px;
   background-color: transparent;
   border-color: #0088cc;
-  margin: 5vw;
+  margin: 5vw 3vw;
 }

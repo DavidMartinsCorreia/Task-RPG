@@ -33,7 +33,7 @@ public class TaskService implements ITaskService {
         task.setPriority(taskDTO.getPrioridade() != null ? taskDTO.getPrioridade() : TaskPriority.MEDIUM);
         task.setDueDate(taskDTO.getDatalim());
         task.setCategory(taskDTO.getCategoria());
-
+        task.setCreatedAt(taskDTO.getDatacr());
         return taskRepository.save(task);
     }
 
